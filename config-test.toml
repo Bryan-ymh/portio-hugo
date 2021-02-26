@@ -1,0 +1,83 @@
+################################### Default Configuration ############################
+baseURL = "http://example.org"
+theme = "powerhouse"
+title = "Powerhouse"
+
+########################### English Language ##########################
+[Languages.en]
+LanguagesName = "English"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+#copyright
+copyright = "All right reserved copyright © Powerhouse 2021"
+
+###################################### Navigation ###################################### 
+#Main Menu
+[[Languages.en.menu.main]]  
+  name = "About Powerhouse"
+  url = "#"
+  weight ="1"
+[[Languages.en.menu.main]]  
+  name = "Our Business"
+  url = "#"
+  weight ="2"
+[[Languages.en.menu.main]]  
+  name = "Contact Us"
+  url = "#"
+  weight ="3"
+
+########################### Traditional Chinese Language ##########################
+[Languages.zh]
+LanguagesName = "繁體"
+languageCode = "zh-hant"
+contentDir = "content/zh-hant"
+weight = 2
+#copyright
+copyright = "2021 Powerhouse 版權所有，不得轉載。"
+
+###################################### Navigation ###################################### 
+#Main Menu
+[[Languages.zh.menu.main]]  
+  name = "關於 Powerhouse"
+  url = "#"
+  weight ="1"
+[[Languages.zh.menu.main]]  
+  name = "業務"
+  url = "#"
+  weight ="2"
+[[Languages.zh.menu.main]]  
+  name = "聯繫我們"
+  url = "#"
+  weight ="3"
+
+########################### Simplified Chinese Language ##########################
+[Languages.sh]
+LanguagesName = "简体"
+languageCode = "zh-hans"
+contentDir = "content/zh-hans"
+weight = 2
+#copyright
+copyright = "2021 Powerhouse 版权所有，不得转载。"
+
+###################################### Navigation ###################################### 
+#Main Menu
+[[Languages.sh.menu.main]]  
+  name = "关于 Powerhouse"
+  url = "#"
+  weight ="1"
+[[Languages.sh.menu.main]]  
+  name = "业务"
+  url = "#"
+  weight ="2"
+[[Languages.sh.menu.main]]  
+  name = "联系我们"
+  url = "#"
+  weight ="3"
+
+###################################### Deafult parameters ######################################
+[params]
+  copyright = "All right reserved copyright © Powerhouse 2021"
+  footerLogo = ""
+  googleAnalytics = ""
+  logo = ""

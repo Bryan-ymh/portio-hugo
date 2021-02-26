@@ -1,0 +1,33 @@
+{{ with .Site.Data.hero }}
+{{ if .enable }}
+<section class="hero" id="home">
+    <div class="hero_background-png" id="path">
+        <img src="images/hero/trangle.png">
+    </div>
+    <div class="hero_background-png-02">
+        <img src="images/hero/color_balls.png">
+    </div>
+    <div class="hero_background-png-03">
+        <img src="images/hero/plates.png">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="hero_content">
+                    <div class="mb-3 text-center">
+                        {{ .content_top | markdownify }}
+                    </div>
+                    <div class="mb-3 text-center">
+                        <p>{{ .content_bottom }}</p>
+                    </div>
+                    <div class="mb-5 text-center">
+                        <a href="{{ $.Site.BaseURL }}{{ "#about" }}"
+                          class="icon-font btn-blink btn btn-lg btn-zoom {{ if $.IsHome }}scroll{{ end }}"><i class="fa {{ .icon }}"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

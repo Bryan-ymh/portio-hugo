@@ -438,6 +438,13 @@ function initialize() {
     icon: pinIcon,
     title: "bizcred",
   });
+
+  
+  anime({
+    targets: '.hero_background-png',
+    translateX: 250,
+    easing: 'easeInOutExpo'
+  });
 }
 
 if ($("#map").length > 0) {

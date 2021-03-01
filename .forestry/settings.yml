@@ -25,6 +25,12 @@ sections:
 - type: document
   path: data/blogSection.yml
   label: Blog Section
+  - type: document
+  path: data/tabHero.yml
+  label: tabhero
+    - type: document
+  path: data/tab_longtext.yml
+  label: tablongtext
 - type: directory
   path: content/portfolio
   label: Portfolio

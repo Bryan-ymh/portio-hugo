@@ -1,0 +1,53 @@
+{{ with .Site.Data.tab_longtext }}
+{{ if .enable }}
+<section class="tab-longtext" id="our_business">
+
+    <div class="container">
+
+            <div class="col-lg-11 col-md-11 col-sm-12">
+
+                <div class="row align-items-left">
+
+                <div class="tab-longtext_tab-textbox-01"> 
+                        <div class="mb-5 text-left">
+                            {{ .content_top | markdownify }}
+                        </div>
+
+                        <div class="mb-5 text-left">
+                            <p>{{ .content_bottom_01 }}</p>
+                        </div>
+
+                        <div class="mb-5 text-left">
+                            <p>{{ .content_bottom_02 }}</p>
+                        </div>
+
+                        <div class="mb-5 text-left">
+                            <p>{{ .content_bottom_03 }}</p>
+                        </div>
+                    </div>   
+
+                        <div class="mb-5 text-center">
+                            <a href=""
+                            class="icon-font btn-blink btn btn-lg btn-zoom {{ if $.IsHome }}scroll{{ end }}"><i class="fa {{ .icon }}"></i></a>
+                        </div>
+
+                 </div>
+             </div>
+
+
+            <div class="col-lg-1 col-md-1 col-sm-12"></div>
+                <div class="row align-items-left">
+                    <div class="tab-longtext__background">
+                        <div class="tab-longtext_background-svg">
+                            <img src="../images/tab-longtext/white-ball.svg">
+                    </div>
+                    </div>
+                </div>
+            </div>        
+
+        </div>
+    </div>
+
+</section>
+{{ end }}
+{{ end }}

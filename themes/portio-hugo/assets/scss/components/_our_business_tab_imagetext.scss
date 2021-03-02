@@ -1,0 +1,79 @@
+.tab-imagetext {
+    padding: 120px 0 1000px 0;
+    position: relative;
+    // align-items: center;
+    // justify-content: center;
+    // overflow: hidden;
+    @include desktop {
+      padding: 120px 0 30px 0;
+    }
+  
+    &_background-png {
+      position: absolute;
+      bottom: 670px;
+      right: 61;
+      z-index: -1;
+      width: 85%;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        animation: fade 2s 1s forwards;
+      }
+    }
+
+    &_tab-image-01 {
+      // position: absolute;
+      // bottom: 380px;
+      // right: 0;
+      // z-index: -1;
+      width: 100%;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        animation: fade 2s 1s forwards;
+      }
+    }
+
+    &_tab-image-02 {
+      // position: absolute;
+      opacity: 0;
+      width: 100%;
+      animation: fade 1s forwards;
+      img {
+        width: 100%;
+        height: 100%;
+
+      }
+    }
+  
+
+         // Font size override
+    p {
+      font-family: $font-family-base;
+      font-size: $font-size-base;
+      font-weight: 400;
+      opacity: 0;
+      transition: all 0.3 ease;
+      animation: fade 1s 2s forwards;
+      }
+    }
+
+    h1 {
+      font-family: $headings-font-family;
+      font-size: $display4-size*0.5;
+      font-weight: 600;
+      opacity: 0;
+      transition: all 0.3 ease;
+      transform: scale(1);
+      animation: fade 2s 1s forwards;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+
+  
+  
+  

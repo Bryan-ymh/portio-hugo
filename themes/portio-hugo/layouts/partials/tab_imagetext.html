@@ -2,48 +2,57 @@
 {{ if .enable }}
 <section class="tab-imagetext" id="our_business">
 
+    <div class="tab-imagetext_background-png">
+        <img src="../images/tab-imagetext/white_bg_01.png">
+    </div>
 
-
-        <div class="tab-imagetext_background-png">
-            <img src="../images/tab-imagetext/white_bg_01.png">
-      </div>
     <div class="container">
-        <div class="row align-items-left">
-            <div class="col-lg-11 col-md-12 col-sm-12">
+        <div class="row align-items-center mb-5">
+
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
+                <div class="tab-imagetext_tab-image-01">
+                    <img src="../images/tab-imagetext/about_pat_photo_01.png">
+                </div>
+            </div>
 
 
-                <!-- <div class="tab-imagetext__background">
-                    <div class="tab-imagetext_background-png">
-                        <img src="../images/tab-imagetext/white_bg_01.png">
-                  </div>
-                </div> -->
+            <div class="col-lg-7 col-md-7 col-sm-12 mt-5">
+                <div class="tab-imagetext_tab-textbox-01">
+                    <div class="mb-5 text-left">
+                        {{ .title_01 | markdownify }}
+                    </div>
 
-                <div class="tab-longtext_tab-textbox-01"> 
-                        <div class="mb-5 text-left">
-                            {{ .content_top | markdownify }}
-                        </div>
+                    <div class="mb-5 text-left">
+                        <p>{{ .body_01 }}</p>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="mb-5 text-left">
-                            <p>{{ .content_bottom_01 }}</p>
-                        </div>
 
-                        <div class="mb-5 text-left">
-                            <p>{{ .content_bottom_02 }}</p>
-                        </div>
+        </div>
 
-                        <div class="mb-5 text-left">
-                            <p>{{ .content_bottom_03 }}</p>
-                        </div>
-                    </div>   
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="tab-imagetext_tab-textbox-02">
+                    <div class="mb-5 text-left">
+                        {{ .title_02 | markdownify }}
+                    </div>
 
-                        <div class="mb-5 text-center">
-                            <a href=""
-                            class="icon-font btn-blink btn btn-lg btn-zoom {{ if $.IsHome }}scroll{{ end }}"><i class="fa {{ .icon }}"></i></a>
-                        </div>
+                    <div class="mb-5 text-left">
+                        <p>{{ .body_02 }}</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="tab-imagetext_tab-image-02">
+                    <img src="../images/tab-imagetext/about_pat_photo_02.png">
+                </div>
             </div>
         </div>
-    </div>
+    </div>1
+
+
 
 </section>
 {{ end }}

@@ -33,27 +33,6 @@
       animation: move_arcs 10s forwards;
     }
   }
-
-  @keyframes move_arcs {
-    0%{
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100%{
-      transform: translate(-50%, -50%) rotate(180deg);
-    }
-  }
-
-  @keyframes move_arcs_rotate {
-    to {
-      transform: rotate(90deg);
-    }
-  }
-
-  @keyframes fade {
-    to {
-      opacity: 1;
-    }
-  }
   
   &_background-png-03 {
     position: absolute;
@@ -259,5 +238,26 @@
   }
   50% {
     transform: translateY(15px);
+  }
+}
+
+@keyframes move_arcs {
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+@keyframes move_arcs_rotate {
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
   }
 }

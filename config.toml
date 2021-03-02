@@ -13,7 +13,7 @@ name = "About"
 url = "#about"
 weight = 2
 [[menu.main]]
-name = "Our Business"
+name = "About Us"
 url = "our_business"
 weight = 3
 [[menu.main]]

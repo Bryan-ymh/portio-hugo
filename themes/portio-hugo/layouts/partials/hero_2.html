@@ -1,13 +1,22 @@
 {{ with .Site.Data.hero }}
 {{ if .enable }}
 <section class="hero" id="home">
-    <div class="hero_background-png" id="path">
+    <div class="animation-outer">
+        <div class="animation-wrapper">
+            <div class="hero_background-png-02 ball" id="ball">
+                <img src="images/hero/color_balls.png">
+            </div>
+            <div class="hero_background-svg">
+            <svg  width="1498" height="892" viewbox="0 0 1498 892">
+                <path fill="none" stroke="none" d="M 108 326 C 418 124 1081 59 1291 283"></path>
+            </svg>
+            </div>
+        </div>
+    </div>
+    <div class="hero_background-png" id="trangle">
         <img src="images/hero/trangle.png">
     </div>
-    <div class="hero_background-png-02">
-        <img src="images/hero/color_balls.png">
-    </div>
-    <div class="hero_background-png-03">
+    <div class="hero_background-png-03" id="plate">
         <img src="images/hero/plates.png">
     </div>
     <div class="container">

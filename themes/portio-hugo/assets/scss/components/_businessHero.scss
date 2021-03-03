@@ -1,0 +1,71 @@
+.business-hero {
+    padding: 300px 0 0px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include desktop {
+      padding: 150px 0 10px 0;
+    }
+    @include desktop-xl {
+      padding: 300px 0 10px 0;
+    }
+
+    &_background-png {
+        position: absolute;
+        bottom: -136px;
+        right: 109px;
+        opacity: 0;
+        width: 80%;
+        animation: fade 1s 1.5s forwards;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    
+      &_background-png-02 {
+        position: absolute;
+        bottom: -45px;
+        right: -11px;
+        width: 64%;
+        opacity: 0;
+        animation: fade 2s 0.5s forwards;
+
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+    }
+
+
+        p {
+            font-family: $font-family-base;
+            font-size: $font-size-base*1.5;
+            font-weight: 700;
+            opacity: 0;
+            transition: all 0.3 ease;
+            transform: scale(1);
+            animation: fade 1s 2s forwards;
+            &:hover {
+            transform: scale(1.3);
+            }
+        }
+    
+        h1 {
+            font-family: $headings-font-family;
+            font-size: $display4-size;
+            font-weight: 900;
+            opacity: 0;
+            transition: all 0.3 ease;
+            transform: scale(1);
+            animation: fade 2s 1s forwards;
+            &:hover {
+            transform: scale(1.3);
+            }
+        }
+
+}
+

@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     @include desktop {
       padding: 150px 0 30px 0;
     }
@@ -12,9 +13,16 @@
     &_background-svg {
       position: absolute;
       top: 120px;
-      left: 1500px;
+      left: 1300px;
       z-index: -1;
       width: 15%;
+
+      @include desktop-lg {
+        left: 970px;
+      }
+      @include desktop-xl {
+        left: 900px;
+      }
 
       img {
         width: 100%;

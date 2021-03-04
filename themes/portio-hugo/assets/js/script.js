@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Preloader
 
 function PageLoad() {
@@ -438,14 +439,30 @@ function initialize() {
     icon: pinIcon,
     title: "bizcred",
   });
-
-  
-  anime({
-    targets: '.hero_background-png',
-    translateX: 250,
-    easing: 'easeInOutExpo'
-  });
 }
+
+setTimeout(heroPath, 10);
+let path = anime.path('.animation-wrapper path');
+function heroPath() {
+$('#ball').show()
+// anime({
+//   targets: 'path',
+//   opacity: 0,
+//   duration: 1000,
+//   loop: true,
+//   direction: 'alternate',
+//   easing: 'easeInOutExpo'
+// });
+}
+anime({
+  targets: '.animation-wrapper #ball',
+  translateX: path('x'),
+  translateY: path('y'),
+  rotate: path('angle'),
+  duration: 2500,
+  loop: false,
+  easing: 'linear'
+});
 
 if ($("#map").length > 0) {
   google.maps.event.addDomListener(window, "load", initialize);

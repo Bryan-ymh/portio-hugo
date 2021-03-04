@@ -1,0 +1,51 @@
+.business-content {
+    padding: 0px 0 120px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include desktop {
+      padding: 0px 0 30px 0;
+    }
+ 
+    &_background-svg { 
+        position: absolute;
+        top: -188px;
+        right: 115px;
+        width: 84%;
+        z-index: -1;
+        img {
+            width: 100%;
+            height: 100%;
+            animation: fade 1.5s 1s forwards;
+          }
+    
+    }
+
+}
+         // Font size override
+         p {
+            font-family: $font-family-base;
+            font-size: $font-size-base;
+            font-weight: 400;
+            opacity: 0;
+            transition: all 0.3 ease;
+            animation: fade 1s 2s forwards;
+            }
+          
+      
+          h1 {
+            font-family: $headings-font-family;
+            font-size: $display4-size*0.5;
+            font-weight: 600;
+            opacity: 0;
+            transition: all 0.3 ease;
+            transform: scale(1);
+            animation: fade 2s 1s forwards;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+      
+      

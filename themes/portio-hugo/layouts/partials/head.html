@@ -15,6 +15,9 @@
   {{ "<!-- Magnific Popup -->" | safeHTML }}
   <link rel="stylesheet" href="{{"plugins/magnafic-popup/magnific-popup.css" | absURL }}" />
 
+  {{ "<!-- AOS Fade Animation -->" | safeHTML }}
+  <link rel="stylesheet" href="{{"plugins/aos-master/aos.css" | absURL }}" />
+
   {{ "<!-- Stylesheets -->" | safeHTML }}
   {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
   <link href="{{ $style.Permalink }}" rel="stylesheet" />

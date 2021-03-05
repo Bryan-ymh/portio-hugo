@@ -207,7 +207,38 @@ $(document).ready(function () {
         d:
           "M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z",
       },
+  });
+
+  // Initi AOS
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      once: true
     });
+    }
+    aos_init();
+    setTimeout(heroPath, 10);
+    let path = anime.path('.animation-wrapper path');
+    function heroPath() {
+    $('#ball').show()
+    // anime({
+    //   targets: 'path',
+    //   opacity: 0,
+    //   duration: 1000,
+    //   loop: true,
+    //   direction: 'alternate',
+    //   easing: 'easeInOutExpo'
+    // });
+  }
+  anime({
+    targets: '.animation-wrapper #ball',
+    translateX: path('x'),
+    translateY: path('y'),
+    rotate: path('angle'),
+    duration: 4000,
+    loop: false,
+    easing: 'linear',
+  });
 });
 
 // G-Map
@@ -440,30 +471,6 @@ function initialize() {
     title: "bizcred",
   });
 }
-
-setTimeout(heroPath, 10);
-let path = anime.path('.animation-wrapper path');
-function heroPath() {
-$('#ball').show()
-// anime({
-//   targets: 'path',
-//   opacity: 0,
-//   duration: 1000,
-//   loop: true,
-//   direction: 'alternate',
-//   easing: 'easeInOutExpo'
-// });
-}
-anime({
-  targets: '.animation-wrapper #ball',
-  translateX: path('x'),
-  translateY: path('y'),
-  rotate: path('angle'),
-  duration: 2500,
-  loop: false,
-  easing: 'linear'
-});
-
 if ($("#map").length > 0) {
   google.maps.event.addDomListener(window, "load", initialize);
 }

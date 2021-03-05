@@ -1,0 +1,38 @@
+{{ with .Site.Data.about_2Section }}
+{{ if .enable }}
+<section class="section about" id="about">
+    <div class="about__background" aos-animate aos-init data-aos="fade-right" data-aos-delay="300">
+        <img src="images/about/white_bg_01.svg">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="about_content">
+                    <div class="mb-2 text-left">
+                        {{ .content_top | markdownify }}
+                    </div>
+                    <div class="mb-2 text-left">
+                        <p>{{ .content_bottom }}</p>
+                    </div>
+                    <div class="mb-2 text-left">
+                        <a class="arrow-btn" href="#"><img src="images/about/arrow_btn.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="about__background-02" aos-animate aos-init data-aos="fade-left" data-aos-delay="200">
+                    <img src="images/about/ideas.svg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="about__background-03" aos-animate aos-init data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/about/white_balls.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

@@ -97,6 +97,7 @@
 <script src="{{ "plugins/imagesloaded/imagesloaded.min.js" | absURL }}"></script>
 <script src="{{ "plugins/masonry/masonry.min.js" | absURL }}"></script>
 <script src="{{ "plugins/animejs/anime.min.js" | absURL }}"></script>
+<script src="{{ "plugins/aos-master/aos.js" | absURL }}"></script>
 {{ $formhandler := resources.Get "js/form-handler.js" | minify }}
 <script src="{{ $formhandler.Permalink }}"></script>
 {{ $script := resources.Get "js/script.js" | minify }}

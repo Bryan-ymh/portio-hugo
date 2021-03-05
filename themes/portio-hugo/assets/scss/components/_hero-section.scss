@@ -1,5 +1,5 @@
 .hero {
-  padding: 400px 0 300px 0;
+  padding: 400px 0 100px 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -31,7 +31,6 @@
     top: 320px;
     left: 140px;
     z-index: -1;
-    animation: move_top 5s infinite linear;
     img {
       width: 100%;
       height: 100%;
@@ -55,7 +54,6 @@
     right: 100px;
     z-index: -1;
     width: 25%;
-    animation: move_top 5s infinite linear;
     img {
       width: 100%;
       height: 100%;

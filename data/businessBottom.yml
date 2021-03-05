@@ -1,5 +1,17 @@
 enable: true
 title_01: >
-  # What We Offer?
-body_01: >
-    We are problem-centric,
+  # We want to make your company better and change people’s lives with our assistance, and we think the best way to do that is by being as open as possible
+
+list:
+  - content: >
+      Continually gather feedback to help you build something everyone loves.
+  - content: >   
+      Tell you exactly what and how we solve your problems, at all times.
+  - content: >
+      Communicate clearly by making your reports frequent, updated and easy to read.
+  - content: >
+      Providing you with a diverse team to promote an inclusive and empowering working environment to support each and every team member.
+  - content: >
+      Hiring the right engineers and helping them thrive with you by making sure they have a clear path of progression.
+  - content: >
+      If you have a complaint, we will sort out the issue efficiently and grow from it.

@@ -9,12 +9,12 @@ name = "Home"
 url = "#home"
 weight = 1
 [[menu.main]]
-name = "About"
-url = "#about"
+name = "About Us"
+url = "about"
 weight = 2
 [[menu.main]]
-name = "About Us"
-url = "our_business"
+name = "Our Business"
+url = "business"
 weight = 3
 [[menu.main]]
 name = "Contact Us"

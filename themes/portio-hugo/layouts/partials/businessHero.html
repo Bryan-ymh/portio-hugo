@@ -1,0 +1,39 @@
+{{ with .Site.Data.businessHero }}
+{{ if .enable }}
+<section class="business-hero" id="business">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                 <div class="business-hero_background-png">
+                       <img src="../images/business/orange-trangle.png">
+                 </div>
+
+                 <div class="business-hero_background-png-02">
+                        <img src="../images/business/white-ball.png">
+                 </div>
+            </div>
+
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="business-hero_content">
+
+                                <div class="mb-3 text-left">
+                                    {{ .content_top | markdownify }}
+                                </div>
+                            
+                                <div class="mb-3 text-left">
+                                    <p>{{ .content_bottom }}</p>
+                                </div>
+
+                                <div class="mb-5 text-center">
+                                    <a href=""
+                                    class="icon-font btn-blink btn btn-lg btn-zoom {{ if $.IsHome }}scroll{{ end }}"><i class="fa {{ .icon }}"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+</section>
+{{ end }}
+{{ end }}

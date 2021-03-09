@@ -1,0 +1,149 @@
+{{ with .Site.Data.businessContent}}
+{{ if .enable }}
+<section class="business-content" id="business">
+
+
+
+
+    <div class="container">
+
+
+
+        <!-- title ------------------------------------------>
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="business-content_textbox-01 text-center">
+                    <div class="mb-5 px-5">
+                        {{ .title_01 | markdownify }}
+                    </div>
+
+                    <div class="mb-5 px-5">
+                        <p>{{ .body_01 }}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Group_01 -------------------------------------------->
+
+        <div class="row align-items-center mb-5 mx-5">
+
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
+                <div class="business-content_content-svg">
+                    <img src="../images/business/content.svg">
+                </div>
+            </div>
+
+
+            <div class="col-lg-7 col-md-7 col-sm-12 mt-5">
+                <div class="business-content_content-01">
+                    <div class="mb-5 text-left">
+                        <p>{{ .body_02 }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group_02 -->
+        <div class="row align-items-center mb-5 mx-5">
+            <div class="col-lg-7 col-md-7 col-sm-12 mt-5">
+                <div class="business-content_content-02">
+                    <div class="mb-5 text-left">
+                        <p>{{ .body_03 }}</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
+                <div class="business-content_content-svg">
+                    <img src="../images/business/content_01.svg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Group_03 -->
+
+        <div class="row align-items-center mb-5 mx-5">
+
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
+                <div class="business-content_content-svg">
+                    <img src="../images/business/content_02.svg">
+                </div>
+            </div>
+
+
+            <div class="col-lg-7 col-md-7 col-sm-12 mt-5">
+                <div class="business-content_content-03">
+                    <div class="mb-5 text-left">
+                        <p>{{ .body_04 }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group_04 -->
+
+        <div class="row align-items-center mb-5 mx-5">
+
+            <div class="col-lg-7 col-md-7 col-sm-12 mt-5">
+                <div class="business-content_content-03">
+                    <div class="mb-5 text-left">
+                        <p>{{ .body_04 }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
+                <div class="business-content_content-svg">
+                    <img src="../images/business/content_03.svg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Group_03 -->
+
+        <div class="row align-items-center mb-5 mx-5">
+
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-5">
+                <div class="business-content_content-svg">
+                    <img src="../images/business/content_04.svg">
+                </div>
+            </div>
+
+
+            <div class="col-lg-7 col-md-7 col-sm-12 mt-5">
+                <div class="business-content_content-04">
+                    <div class="mb-5 text-left">
+                        <p>{{ .body_05 }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bottom -------------------------------------------->
+
+
+
+    </div>
+
+    <!-- backgroud -------------------------------------------->
+
+    <div class="business-content_cover-png">
+        <img src="../images/business/white-ball.png">
+    </div>
+
+
+    <div class="business-content_cover-png-02">
+        <img src="../images/business/orange-trangle.png">
+    </div>
+
+    <div class="business-content_background-svg">
+        <img src="../images/business/background.svg">
+    </div>
+
+</section>
+{{ end }}
+{{ end }}

@@ -691,9 +691,9 @@ $(function () {
     var style = [
       '<style>',
       '  .modal.fade .modal-dialog {',
-      '    transition: -webkit-transform .3s ease-out;',
-      '    transition: transform .3s ease-out;',
-      '    transition: transform .3s ease-out,-webkit-transform .3s ease-out;',
+      '    transition: -webkit-transform .all 0.3 ease-out;',
+      '    transition: transform .all 0.3 ease-out;',
+      '    transition: transform .all 0.3 ease-out,-webkit-transform .all 0.3 ease-out;',
       '    -webkit-transform: translate(0,-50px);',
       '    transform: translate(0,-50px);',
       '  }',

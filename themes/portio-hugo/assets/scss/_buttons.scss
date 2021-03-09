@@ -1,5 +1,5 @@
 // .btn {
-//   transition: all 0.3s ease;
+//   transition: all 0.3 ease 0.3 ease;
 //   padding: 20px 50px;
 //   border-radius: 7px;
 //   &:hover {
@@ -28,7 +28,7 @@
 }
 
 .btn-zoom {
-  transition: all 0.3s ease;
+  transition: all 0.3 ease;
   transform: scale(1);
   &:hover {
     box-shadow: 0 8px 20px rgba(56, 87, 241, 0.3);

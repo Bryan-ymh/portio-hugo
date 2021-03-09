@@ -1,7 +1,26 @@
 {{ with .Site.Data.our_businessSection }}
 {{ if .enable }}
     <section class="section our-business">
-        
+        <div class="our-business__background" data-aos="fade-left" data-aos-delay="1500">
+            <img src="images/our-business/white_bg_02.svg">
+        </div>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-6">
+                    <div class="our-business_content">
+                        <div class="mb-2 text-left">
+                            {{ .content_top | markdownify }}
+                        </div>
+                        <div class="mb-2 text-left">
+                            <p>{{ .content_bottom }}</p>
+                        </div>
+                        <div class="mb-2 text-left">
+                            <a class="arrow-btn" href="#"><img src="images/our-business/arrow_btn.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 {{ end }}
 {{ end }}

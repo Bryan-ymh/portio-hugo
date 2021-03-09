@@ -1,0 +1,20 @@
+.ball-background {
+    position: relative;
+    svg {
+        position: absolute;
+        display: block;
+        top: 50vh;
+        z-index: 1;
+        margin-bottom: 50vh;
+        overflow: visible;
+    }
+    .helloball {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        top: -1rem;
+        left: -1rem;
+        z-index: 100;
+        width: 6%;
+    }
+}

@@ -105,7 +105,7 @@ $(function () {
 
   QUnit.test('Util.getTransitionDurationFromElement should get the first transition duration if multiple transition durations are defined', function (assert) {
     assert.expect(1)
-    var $div = $('<div style="transition: transform .3s ease-out, opacity .2s;"></div>').appendTo($('#qunit-fixture'))
+    var $div = $('<div style="transition: transform .all 0.3 ease-out, opacity .2s;"></div>').appendTo($('#qunit-fixture'))
 
     assert.strictEqual(Util.getTransitionDurationFromElement($div[0]), 300)
   })

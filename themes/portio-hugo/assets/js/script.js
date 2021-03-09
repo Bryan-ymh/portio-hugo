@@ -1,6 +1,5 @@
 // @ts-nocheck
 // Preloader
-
 function PageLoad() {
   $("body").removeClass("hidden");
   TweenMax.to($(".preloader-text"), 1, {
@@ -235,10 +234,52 @@ $(document).ready(function () {
     translateX: path('x'),
     translateY: path('y'),
     rotate: path('angle'),
-    duration: 4000,
+    duration: 3500,
     loop: false,
     easing: 'linear',
   });
+  function ballMove() {
+    const path = document.querySelector('.svgPath');
+    const ball = document.querySelector('.helloball');
+    
+    let pathPosition = path.getBoundingClientRect();
+    let documentPosition = document.body.getBoundingClientRect();
+    const pathTotalLength = path.getTotalLength();
+    
+    function positionElements() {
+        // SVG passes center of screen
+        const relativePageOffset = -pathPosition.top +
+              (window.pageYOffset + window.innerHeight * .5);
+        
+        const pointPercentage = relativePageOffset / pathPosition.height;
+        const pointOnPath = pointPercentage * pathTotalLength;
+        const pathPoint = path.getPointAtLength(pointOnPath);
+    
+        ball.style.transform = `translate(
+          ${ pathPosition.left + pathPoint.x }px,
+          ${ pathPosition.top + pathPoint.y }px
+        )`;
+        // console.log($(document).scrollTop())
+        // console.log(pathPoint)
+        // console.log(pointOnPath)
+        // var test = $('.helloball').css('transform').replace(/[^0-9\-.,]/g, '').split(',');
+        // console.log (test)
+    }
+    
+    window.addEventListener('scroll', () => {
+      positionElements();
+    })
+    
+    window.addEventListener('resize', () => {
+      pathPosition = path.getBoundingClientRect();
+      documentPosition = document.body.getBoundingClientRect();
+      
+      positionElements();
+    });
+    
+    positionElements();
+  }
+  ballMove();
 });
 
 // G-Map

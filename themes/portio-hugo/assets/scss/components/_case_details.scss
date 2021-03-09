@@ -118,7 +118,7 @@
           a {
             color: $body-color;
             display: block;
-            transition: all 0.3s ease;
+            transition: all 0.3 ease 0.3 ease;
             &:hover {
               color: $primary;
             }

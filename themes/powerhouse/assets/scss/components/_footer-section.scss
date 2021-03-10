@@ -1,0 +1,28 @@
+.footer {
+    background: none;
+    position: relative;
+    &__footer {
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        @include desktop {
+            text-align: center;
+        }
+        @include mobile {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@keyframes moveLeft {
+    0%,
+    100% {
+        -webkit-transform: translateX(0) rotate(-20deg);
+        transform: translateX(0) rotate(-20deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(15px) rotate(-20deg);
+        transform: translateX(15px) rotate(-20deg);
+    }
+}

@@ -44,7 +44,7 @@
       right: 65px;
       width: 13%;
       z-index: -1;
-      animation: fadeInRight 2s linear, move_top 5s infinite linear;
+      animation: fade 3s forwards, move_top 5s infinite linear;
       img {
         width: 100%;
       }
@@ -61,6 +61,7 @@
       width: 40%;
       left: 0;
       top: 360px;
+      animation: fade 2s forwards;
     }
     img {
       width: 100%;
@@ -90,20 +91,11 @@
       width: 45%;
       right: 0;
       top: 430px;
+      animation: fade 2s forwards;
     }
     img {
       width: 100%;
       height: 100%;
-    }
-  }
-
-  &_footer-svg {
-    position: absolute;
-    bottom: 20px;
-    left: -130px;
-    animation: move_top 5s infinite linear;
-    @include desktop {
-      display: none;
     }
   }
   &_content {
@@ -116,21 +108,6 @@
     }
     @include mobile {
       margin-top: 60px;
-    }
-    .hero_blob {
-      position: absolute;
-      z-index: -1;
-      top: -45%;
-      left: -45%;
-      height: 440px;
-      width: 440px;
-      svg {
-        width: 100%;
-        position: relative;
-      }
-      @include desktop {
-        display: none;
-      }
     }
     .icon-font {
       font-size: 30px;
@@ -165,104 +142,6 @@
       }
       &:hover {
         transform: scale(1.3);
-      }
-    }
-  }
-  &_figure {
-    width: 90%;
-    margin-left: auto;
-    border-radius: 20px;
-    position: relative;
-    @include desktop {
-      width: 100%;
-    }
-    .figure-svg {
-      position: absolute;
-      top: -55px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      z-index: -1;
-      height: 150px;
-      animation: move_left 5s infinite linear;
-      img {
-        height: 100%;
-        width: 100%;
-      }
-    }
-    img {
-      height: 100%;
-      width: 100%;
-    }
-    &-popup {
-      position: absolute;
-      bottom: 80px;
-      left: 0;
-      transform: translateX(-50%);
-      transition: all 0.3 ease 0.3 ease;
-      @include desktop {
-        bottom: -40px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .thumb {
-        height: 160px;
-        width: 250px;
-        border: 1px solid #707070;
-        border-radius: 20px;
-        overflow: hidden;
-        position: relative;
-        &::before {
-          position: absolute;
-          content: "";
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background: rgba(0, 0, 0, 0.6);
-          z-index: 1;
-        }
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      .popup-button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 60px;
-        width: 60px;
-        background: #ffffff;
-        border-radius: 50%;
-        z-index: 2;
-        transition: all 0.3 ease 0.3 ease;
-        svg {
-          position: absolute;
-          top: 50%;
-          left: 55%;
-          transform: translate(-50%, -50%);
-          transition: all 0.3 ease 0.3 ease;
-
-          path {
-            fill: $primary;
-          }
-        }
-        &:hover {
-          background-color: $primary;
-          svg {
-            path {
-              fill: #ffffff;
-            }
-          }
-        }
-      }
-      &:hover {
-        .popup-button {
-          transform: translate(-50%, -50%) scale(1.1);
-        }
       }
     }
   }
@@ -302,7 +181,10 @@
 }
 
 @keyframes fade {
-  to {
+  0% {
+    opacity: 0
+  }
+  100% {
     opacity: 1;
   }
 }

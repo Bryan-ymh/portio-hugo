@@ -1,51 +1,27 @@
-.our-business {
+.contact-us {
     position: relative;
-    padding-top: 320px;
+    padding-top: 330px;
     padding-bottom: 400px;
     overflow: hidden;
     @include mobile {
-        padding: 120px 0 300px 0;
+        padding: 150px 0 300px 0
     }
     &__background {
       position: absolute;
-      right: 0;
-      bottom: -250px;
+      left: 0;
+      bottom: -80px;
       z-index: -1;
-      width: 65%;
+      width: 70%;
       @include mobile {
-          bottom: -150px;
-          width: 160%;
-          right: 0;
+          left: 0;
+          bottom: 180px;
+          width: 130%;
       }
       img {
           width: 100%;
           height: 100%;
       }
     }
-
-    .ball-row {
-        display: none;
-        @include mobile {
-            display: block;
-            position: relative;
-        }
-    }
-
-    &__background-02 {
-        display: none;
-        @include mobile {
-        display: block;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 25%;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
     &_content {
       display: flex;
       align-items: center;
@@ -116,7 +92,23 @@
           height: 100%;
         }
       }
+    
     }
-}
+    &__background-02 {
+      position: absolute;
+      top: 800px;
+      right: 200px;
+      z-index: -1;
+      @include mobile {
+          top: 400px;
+          right: 0;
+          width: 60%;
+      }
+      img {
+          width: 100%;
+          height: 100%;
+      }
+    }
+  }
   
   

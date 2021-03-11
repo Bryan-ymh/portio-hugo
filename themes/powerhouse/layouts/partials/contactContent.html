@@ -1,5 +1,7 @@
-{{ with .Site.Data.contactContent}}
-{{ if .enable }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.contentContent.enable }}
+{{- with $data.contentContent }}
 <section class="contact-content" id="contact">
 
     <div class="container">

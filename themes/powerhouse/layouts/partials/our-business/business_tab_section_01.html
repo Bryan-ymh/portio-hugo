@@ -1,5 +1,7 @@
-{{ with .Site.Data.businessContent}}
-{{ if .enable }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.business_tab_section_01.enable }}
+{{- with $data.business_tab_section_01}}
 <section class="business-content" id="business">
 
     <div class="container">

@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{- if $data.about_2Section.enable }}
-{{- with $data.about_2Section }}
+{{- if $data.about_section.enable }}
+{{- with $data.about_section }}
 <section class="section about" id="about">
     <div class="about__background" data-aos="fade-right" data-aos-delay="1000">
         <img src="images/about/white_bg_01.svg">

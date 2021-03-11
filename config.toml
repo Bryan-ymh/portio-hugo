@@ -56,7 +56,7 @@ copyright = "2021 Powerhouse 版權所有，不得轉載。"
 LanguageName = "简体"
 languageCode = "zh-hans"
 contentDir = "content/zh-hans"
-weight = 2
+weight = 3
 #copyright
 copyright = "2021 Powerhouse 版权所有，不得转载。"
 

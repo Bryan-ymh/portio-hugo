@@ -20,28 +20,28 @@ VERSION:	1.0.0
 
 @import "components/navbar";
 
+@import "components/footer-section";
+
 @import "components/hero-section";
 
 @import "components/about-section";
 
-@import "components/footer-section";
+@import "components/our-business-section";
 
-@import "components/our-businessSection";
-
-@import "components/contact-usSection";
+@import "components/contact-us-section";
 
 @import "components/ball-background";
 
-@import "components/about_tab_imagetext";
+@import "components/about-tab-hero";
 
-@import "components/about_tab_hero";
+@import "components/about-tab-section-01";
 
-@import "components/about_tab_longtext";
+@import "components/about-tab-section-02";
 
-@import "components/businessHero";
+@import "components/business-tab-hero";
 
-@import "components/businessBottom";
+@import "components/business-tab-section-02";
 
-@import "components/businessContent";
+@import "components/business-tab-section-01";
 
-@import "components/contactContent";
+@import "components/contact-tab-content";

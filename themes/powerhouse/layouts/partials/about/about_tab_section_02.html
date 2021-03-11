@@ -1,5 +1,7 @@
-{{ with .Site.Data.tab_imagetext}}
-{{ if .enable }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.about_tab_section_02.enable }}
+{{- with $data.about_tab_section_02 }}
 <section class="tab-imagetext" id="about">
 
     <div class="tab-imagetext_background-png">

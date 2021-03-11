@@ -1,5 +1,7 @@
-{{ with .Site.Data.tab_hero }}
-{{ if .enable }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.about_tab_hero.enable }}
+{{- with $data.about_tab_hero }}
 <section class="tab-hero" id="about">
 
     <div class="container">

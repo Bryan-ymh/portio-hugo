@@ -1,5 +1,7 @@
-{{ with .Site.Data.tab_longtext }}
-{{ if .enable }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.about_tab_section_01.enable }}
+{{- with $data.about_tab_section_01 }}
 <section class="tab-longtext" id="about">
 
     <div class="container">

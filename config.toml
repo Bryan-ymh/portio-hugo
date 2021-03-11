@@ -5,7 +5,7 @@ title = "Powerhouse"
 
 ########################### English Language ##########################
 [Languages.en]
-LanguagesName = "English"
+LanguageName = "English"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
@@ -29,7 +29,7 @@ copyright = "All right reserved copyright © Powerhouse 2021"
 
 ########################### Traditional Chinese Language ##########################
 [Languages.zh]
-LanguagesName = "繁體"
+LanguageName = "繁體"
 languageCode = "zh-hant"
 contentDir = "content/zh-hant"
 weight = 2
@@ -53,7 +53,7 @@ copyright = "2021 Powerhouse 版權所有，不得轉載。"
 
 ########################### Simplified Chinese Language ##########################
 [Languages.sh]
-LanguagesName = "简体"
+LanguageName = "简体"
 languageCode = "zh-hans"
 contentDir = "content/zh-hans"
 weight = 2

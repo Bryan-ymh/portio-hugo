@@ -1,5 +1,7 @@
-{{ with .Site.Data.hero }}
-{{ if .enable }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.hero.enable }}
+{{- with $data.hero }}
 <section class="hero" id="home">
     <div class="animation-outer">
         <div class="animation-wrapper">

@@ -2,13 +2,13 @@
 
 {{- if $data.business_tab_section_02.enable }}
 {{- with $data.business_tab_section_02 }}
-<section class="business-bottom" id="business">
+<section class="business-tab-section-02" id="business">
 
     <div class="container">
     <!-- Content-------------------------------------------->
     <div class="row align-items-center mb-5">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="business-bottom_textbox-01">
+            <div class="business-tab-section-02_textbox-01">
                 <div class="px-5">
                     <p>{{ .title_01 | markdownify }}</p>
                 </div>
@@ -19,10 +19,10 @@
     <!-- Content-02-------------------------------------------->
     <div class="row align-items-center mb-5">
     <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="business-bottom_textbox-02">
+        <div class="business-tab-section-02_textbox-02">
         {{ $contentList := .list }}
         {{ range $contentList }}
-        <div class="business-bottom_content">
+        <div class="business-tab-section-02_content">
             <div class="px-5 text-left">
             <ul>
                 <li><p>{{ .content | markdownify }}</p></li>
@@ -37,7 +37,7 @@
     </div>
 
     <!-- backgroud -------------------------------------------->
-    <div class="business-bottom_background-svg-02">
+    <div class="business-tab-section-02_background-svg-02">
         <img src="../images/business-tab/section-02/background_2.svg">
     </div>
 </section>

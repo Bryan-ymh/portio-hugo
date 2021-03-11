@@ -2,13 +2,13 @@
 
 {{- if $data.contact_tab_content.enable }}
 {{- with $data.contact_tab_content }}
-<section class="contact-content" id="contact">
+<section class="contact-tab-content" id="contact">
 
     <div class="container">
         <!-- Content-------------------------------------------->
         <div class="row align-items-center mb-5">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="contact-content_textbox-01">
+                <div class="contact-tab-content_textbox-01">
                     <div class="px-lg-5">
                         {{ .title_01 | markdownify }}
                     </div>
@@ -24,42 +24,42 @@
         <div class="row align-items-left mb-5">
             <div class="col-lg-12 col-md-12 col-sm-12">
         <!-- row-1-------------------------------------------->
-                <div class="contact-content_inline">
+                <div class="contact-tab-content_inline">
 
-                    <div class="contact-content_title">
+                    <div class="contact-tab-content_title">
                         <div class="px-lg-5 text-left">
                             <p>{{ .subtitle_01 | markdownify }}</p>
                         </div>
                     </div>
-                    <div class="contact-content_body">
+                    <div class="contact-tab-content_body">
                         <div class="pr-auto pl-0 text-left">
                             <p>{{ .body_01 | markdownify }}</p>
                         </div>
                     </div>
                 </div>
         <!-- row-2-------------------------------------------->
-                <div class="contact-content_inline">
+                <div class="contact-tab-content_inline">
 
-                    <div class="contact-content_title">
+                    <div class="contact-tab-content_title">
                         <div class="px-lg-5 text-left">
                             <p>{{ .subtitle_02 | markdownify }}</p>
                         </div>
                     </div>
-                    <div class="contact-content_body">
+                    <div class="contact-tab-content_body">
                         <div class="pr-auto text-left">
                             <p><a href="mailto:{{ .body_02 }}">{{ .body_02 | markdownify }}</a></p>
                         </div>
                     </div>
                 </div>
         <!-- row-3-------------------------------------------->
-                <div class="contact-content_inline">
+                <div class="contact-tab-content_inline">
 
-                    <div class="contact-content_title">
+                    <div class="contact-tab-content_title">
                         <div class="px-lg-5 text-left">
                             <p>{{ .subtitle_03 | markdownify }}</p>
                         </div>
                     </div>
-                    <div class="contact-content_body">
+                    <div class="contact-tab-content_body">
                         <div class="pr-auto text-left">
                             <p><a href="mailto:{{ .body_02 }}">{{ .body_03 | markdownify }}</a></p>
                         </div>
@@ -75,15 +75,15 @@
 
     <!-- backgroud -------------------------------------------->
 
-    <div class="contact-content_decor-png">
+    <div class="contact-tab-content_decor-png">
         <img src="../images/contact-tab/hero/orange-ball.png">
     </div>
 
-    <div class="contact-content_decor-png-02">
+    <div class="contact-tab-content_decor-png-02">
         <img src="../images/contact-tab/hero/orange-trangle.png">
     </div>
 
-    <div class="contact-content_background-svg">
+    <div class="contact-tab-content_background-svg">
         <img src="../images/contact-tab/hero/background.svg">
     </div>
 </section>

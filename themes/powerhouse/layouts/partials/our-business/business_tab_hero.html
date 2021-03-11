@@ -2,22 +2,22 @@
 
 {{- if $data.business_tab_hero.enable }}
 {{- with $data.business_tab_hero }}
-<section class="business-hero" id="business">
+<section class="business-tab-hero" id="business">
 
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-5 col-sm-12">
-                 <div class="business-hero_background-png">
+                 <div class="business-tab-hero_background-png">
                        <img src="../images/business-tab/hero/orange-trangle.png">
                  </div>
 
-                 <div class="business-hero_background-png-02">
+                 <div class="business-tab-hero_background-png-02">
                         <img src="../images/business-tab/hero/white-ball.png">
                  </div>
             </div>
 
             <div class="col-lg-7 col-md-7 col-sm-12">
-                            <div class="business-hero_content">
+                            <div class="business-tab-hero_content">
 
                                 <div class="mb-3 text-left">
                                     {{ .content_top | markdownify }}

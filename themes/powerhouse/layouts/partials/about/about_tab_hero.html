@@ -2,21 +2,21 @@
 
 {{- if $data.about_tab_hero.enable }}
 {{- with $data.about_tab_hero }}
-<section class="tab-hero" id="about">
+<section class="about-tab-hero" id="about">
 
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-5 col-sm-12">
-                <div class="tab-hero_background-png">
+                <div class="about-tab-hero_background-png">
                     <img src="../images/about-tab/hero/plate.png">
                 </div>
-                <div class="tab-hero_background-png-02">
+                <div class="about-tab-hero_background-png-02">
                     <img src="../images/about-tab/hero/ball.png">
                 </div>
             </div>
 
             <div class="col-lg-7 col-md-7 col-sm-12">
-                <div class="tab-hero_content">
+                <div class="about-tab-hero_content">
 
                     <div class="mb-3 text-left">
                         {{ .content_top | markdownify }}
